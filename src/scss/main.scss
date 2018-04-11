@@ -19,6 +19,13 @@ TABLE OF CONTENTS:
 
 /* 1. Main Layout ================================= */
 
+@import 'partials/home';
+@import 'partials/missions';
+@import 'partials/header';
+@import 'partials/news';
+// @import 'partials/whatever'
+// @import 'partials/whatever'
+
 * {
 	box-sizing: border-box;
 }
@@ -37,41 +44,6 @@ section {
 	}
 }
 
-.nasa-logo{
-	background-image: url(../img/logo.gif);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 130px;
-	height: 130px;
-	margin: 30px;
-}
-
-.earth{
-	background-image: url(../img/earth2.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 40%;
-	height: 0;
-	padding-bottom: 40%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-
-.orb{
-	display: flex;
-	justify-content: center;
-
-	.orb-1{
-		background-image: url(../img/innerSmallBlueEllipse.png);
-		background-repeat: no-repeat;
-		height: 70%;
-		width: 70%;
-	}
-
-	.orb-2{
-
-	}
+.hide{
+	// display:none;
 }
