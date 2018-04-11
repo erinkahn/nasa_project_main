@@ -1,0 +1,69 @@
+/* 
+==============================================
+CONTENT:	Nasa Project
+AUTHOR:		Cassandra Desrosiers & Erin Kahn
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../img/background.png);
+}
+
+.nasa-logo{
+	background-image: url(../img/logo4eva.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 23%;
+	height: 0;
+	padding-bottom: 23%;
+	margin: 30px 0 0 30px;
+	max-width: 150px;	
+}
+
+.earth{
+	background-image: url(../img/earth2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 40%;
+	height: 0;
+	padding-bottom: 40%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.orb{
+	display: flex;
+	justify-content: center;
+
+	.orb-1{
+		background-image: url(../img/innerSmallBlueEllipse.png);
+		background-repeat: no-repeat;
+		height: 70%;
+		width: 70%;
+	}
+
+	.orb-2{
+
+	}
+}
