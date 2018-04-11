@@ -1,7 +1,7 @@
 /* 
 ==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
+CONTENT:	Nasa Projecr
+AUTHOR:		Cassandra Desrosiers & Erin Kahn
 ==============================================
 
 TABLE OF CONTENTS:
@@ -73,83 +73,25 @@ table {
 }
 
 body {
-	background: #ccc;
+	background-image: url(../img/background.png);
 }
 
-/* 2. Content ================================= */
-.content {
-	position: relative;
-	font-family: sans-serif;
-	width: 90%;
-	max-width: 500px;
-	margin: 140px auto;
-	padding: 30px 20px 30px 30px;
+.nasa-logo {
+	background-image: url(../img/nasaLogo.png);
+	width: 20%;
 }
 
-.content .foreground {
-	position: relative;
-	z-index: 2;
-}
-
-.content .background {
+.earth {
+	background-image: url(../img/earth2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 40%;
+	height: 0;
+	padding-bottom: 40%;
 	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: white;
-	z-index: 1;
-	transition: 0.2s;
-	transform: translateX(20px) perspective(600px) rotateY(15deg);
-}
-
-.content:hover .background {
-	transform: translateX(-30px) perspective(600px) rotateY(-15deg);
-}
-
-.content .logo {
-	position: absolute;
-	top: -30px;
-	width: 60px;
-	z-index: 2;
-	transition: 0.3s;
-}
-
-.content .logo:hover {
-	transform: rotate(-0.4turn);
-}
-
-.content h1 {
-	font-weight: 700;
-	font-size: 22pt;
-	margin: 15px 0;
-}
-
-.content p {
-	color: #777;
-	line-height: 140%;
-}
-
-.content p.github {
-	font-size: 0.8em;
-}
-
-.content p.github a {
-	opacity: 0.2;
-	transition: 0.3s;
-}
-
-.content p.github a:hover {
-	opacity: 1;
-	color: red;
-}
-
-.content code {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	font-size: 0.8em;
-	opacity: 0.2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=main.css.map */
