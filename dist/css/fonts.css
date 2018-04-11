@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'cf_spaceshipregular';
+    src: url('cfspaceship-regular-webfont.woff2') format('woff2'),
+         url('cfspaceship-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zianregular';
+    src: url('zian_free_promo_2015_con_kerning-webfont.woff2') format('woff2'),
+         url('zian_free_promo_2015_con_kerning-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
