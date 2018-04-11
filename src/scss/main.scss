@@ -1,6 +1,6 @@
 /* 
 ==============================================
-CONTENT:	Nasa Projecr
+CONTENT:	Nasa Project
 AUTHOR:		Cassandra Desrosiers & Erin Kahn
 ==============================================
 
@@ -28,8 +28,12 @@ body {
 }
 
 .nasa-logo{
-	background-image: url(../img/nasaLogo.png);
-	width: 20%;
+	background-image: url(../img/logo.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 130px;
+	height: 130px;
+	margin: 30px;
 }
 
 .earth{
