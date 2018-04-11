@@ -58,3 +58,20 @@ section {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+
+.orb{
+	display: flex;
+	justify-content: center;
+
+	.orb-1{
+		background-image: url(../img/innerSmallBlueEllipse.png);
+		background-repeat: no-repeat;
+		height: 70%;
+		width: 70%;
+	}
+
+	.orb-2{
+
+	}
+}
