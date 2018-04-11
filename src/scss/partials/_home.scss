@@ -1,0 +1,83 @@
+section.home {
+	
+
+	.earth{
+		background-image: url(../img/earth2.png),
+		url(..img/mist.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 40%;
+		height: 0;
+		padding-bottom: 40%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.orb{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: 0.6px solid rgba(0, 17, 255, 0.7);
+		;
+		border-radius: 50%;
+		
+		&.orb-1{
+			width: 53%;
+			height: 0;
+			padding-bottom: 53%;
+
+			.about-btn, .missions-btn{
+				background-size: cover;
+				background-repeat: no-repeat;
+				width: 11%;
+				height: 0;
+				padding-bottom: 11%;
+				position: absolute;
+				transform: translate(-50%, -50%);
+			}
+
+			.about-btn{
+				background-image: url(../img/rotatingCircles.png);
+				top: 0.8%;
+				left: 50%;
+			}
+
+			.missions-btn{
+				background-image: url(../img/rotatingCircles.png);
+				top: 100%;
+				left: 50%;
+			}
+		}
+		
+		&.orb-2{
+			width: 70%;
+			height: 0;
+			padding-bottom: 70%;
+
+			.news-btn, .home-btn{
+				background-size: cover;
+				background-repeat: no-repeat;
+				width: 11%;
+				height: 0;
+				padding-bottom: 11%;
+				position: absolute;
+				transform: translate(-50%, -50%);
+			}
+
+			.news-btn{
+				background-image: url(../img/rotatingCircles.png);
+				left: 0%;
+				top: 50%;
+			}
+
+			.home-btn{
+				background-image: url(../img/rotatingCircles.png);
+				left: 100%;
+				top: 50%;
+			}
+		}
+	}
+}

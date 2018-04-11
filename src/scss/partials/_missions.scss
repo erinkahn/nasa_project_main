@@ -1,0 +1,53 @@
+// font-family: 'Gugi', cursive;
+// font-family: 'Montserrat', sans-serif;
+
+section.missions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1{
+        text-align: center;
+        font-family: 'Gugi', cursive;
+        font-size: 1.8em;
+        white-space: nowrap;
+    }
+
+    section.mission{
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        //tablet and desktop
+        @media screen and (min-width: 768px){
+            flex-direction: row;
+        }
+
+        img{
+            max-width: 200px;
+            margin: 0px auto;
+            //tablet and desktop
+            @media screen and (min-width: 768px){
+                height: 200px;
+                margin: 100px 70px 0 0;
+            }
+        }
+
+        p{
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6em;
+            font-weight: 400;
+            font-size: 15px;
+            letter-spacing: 0.09em;
+            padding-top: 30px;
+            font-weight: 300;
+            //tablet and desktop
+            @media screen and (min-width: 768px){
+                margin-top: 100px;
+                padding-top: 0;
+            }
+        }
+    }
+
+}
