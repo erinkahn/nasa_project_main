@@ -25,6 +25,16 @@ TABLE OF CONTENTS:
 
 body {
 	background-image: url(../img/background.png);
+	background-attachment: fixed;
+	color: white;
+}
+
+section {
+	min-height: 100vh;
+	&.home {
+		height: 100vh;
+		background-color: rgba(255,0,0,0.3);
+	}
 }
 
 .nasa-logo{
