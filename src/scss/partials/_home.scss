@@ -1,9 +1,8 @@
-section.home {
+.home {
 	
 
 	.earth{
-		background-image: url(../img/earth2.png),
-		url(..img/mist.png);
+		background-image: url(../img/earth2.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		width: 25%;
@@ -21,8 +20,24 @@ section.home {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		border: 0.6px solid rgba(0, 17, 255, 0.7);
-		;
 		border-radius: 50%;
+
+		a{
+			font-family: 'Montserrat', sans-serif;
+			opacity: 0;
+			display: flex;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			margin-top: -10px;
+			justify-content: center;
+
+			&:hover{
+				opacity: 1;
+				
+			}
+		}
+
 		
 		&.orb-1{
 			width: 40%;
@@ -50,6 +65,7 @@ section.home {
 				top: 100%;
 				left: 50%;
 			}
+
 		}
 		
 		&.orb-2{
@@ -78,6 +94,7 @@ section.home {
 				left: 100%;
 				top: 50%;
 			}
+			
 		}
 	}
 }
