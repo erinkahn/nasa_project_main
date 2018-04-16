@@ -6,9 +6,9 @@ section.home {
 		url(..img/mist.png);
 		background-size: cover;
 		background-repeat: no-repeat;
-		width: 40%;
+		width: 25%;
 		height: 0;
-		padding-bottom: 40%;
+		padding-bottom: 25%;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -25,9 +25,9 @@ section.home {
 		border-radius: 50%;
 		
 		&.orb-1{
-			width: 50%;
+			width: 40%;
 			height: 0;
-			padding-bottom: 50%;
+			padding-bottom: 40%;
 
 			.about-btn, .missions-btn{
 				background-size: cover;
@@ -53,9 +53,9 @@ section.home {
 		}
 		
 		&.orb-2{
-			width: 70%;
+			width: 55%;
 			height: 0;
-			padding-bottom: 70%;
+			padding-bottom: 55%;
 
 			.news-btn, .home-btn{
 				background-size: cover;

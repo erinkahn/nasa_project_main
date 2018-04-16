@@ -68,6 +68,150 @@ table {
 }
 
 /* 1. Main Layout ================================= */
+section.home .earth {
+	background-image: url(../img/earth2.png), url(..img/mist.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 25%;
+	height: 0;
+	padding-bottom: 25%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+section.home .orb {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 0.6px solid rgba(0, 17, 255, 0.7);
+	border-radius: 50%;
+}
+
+section.home .orb.orb-1 {
+	width: 40%;
+	height: 0;
+	padding-bottom: 40%;
+}
+
+section.home .orb.orb-1 .about-btn, section.home .orb.orb-1 .missions-btn {
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 11%;
+	height: 0;
+	padding-bottom: 11%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+section.home .orb.orb-1 .about-btn {
+	background-image: url(../img/rotatingCircles.png);
+	top: 0.8%;
+	left: 50%;
+}
+
+section.home .orb.orb-1 .missions-btn {
+	background-image: url(../img/rotatingCircles.png);
+	top: 100%;
+	left: 50%;
+}
+
+section.home .orb.orb-2 {
+	width: 55%;
+	height: 0;
+	padding-bottom: 55%;
+}
+
+section.home .orb.orb-2 .news-btn, section.home .orb.orb-2 .home-btn {
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 11%;
+	height: 0;
+	padding-bottom: 11%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+section.home .orb.orb-2 .news-btn {
+	background-image: url(../img/rotatingCircles.png);
+	left: 0%;
+	top: 50%;
+}
+
+section.home .orb.orb-2 .home-btn {
+	background-image: url(../img/rotatingCircles.png);
+	left: 100%;
+	top: 50%;
+}
+
+section.missions {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+section.missions h1 {
+	text-align: center;
+	font-family: 'Gugi', cursive;
+	font-size: 1.8em;
+	white-space: nowrap;
+}
+
+section.missions section.mission {
+	margin: 0 auto;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+
+@media screen and (min-width: 768px) {
+	section.missions section.mission {
+		flex-direction: row;
+	}
+}
+
+section.missions section.mission img {
+	max-width: 200px;
+	margin: 0px auto;
+}
+
+@media screen and (min-width: 768px) {
+	section.missions section.mission img {
+		height: 200px;
+		margin: 100px 70px 0 0;
+	}
+}
+
+section.missions section.mission p {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6em;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 0.09em;
+	padding-top: 30px;
+	font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+	section.missions section.mission p {
+		margin-top: 100px;
+		padding-top: 0;
+		max-width: 530px;
+	}
+}
+
+.nasa-logo {
+	background-image: url(../img/logo.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 130px;
+	height: 130px;
+	margin: 30px;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -84,29 +228,6 @@ section {
 
 section.home {
 	height: 100vh;
-	background-color: rgba(255, 0, 0, 0.3);
-}
-
-.nasa-logo {
-	background-image: url(../img/logo.gif);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 130px;
-	height: 130px;
-	margin: 30px;
-}
-
-.earth {
-	background-image: url(../img/earth2.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 40%;
-	height: 0;
-	padding-bottom: 40%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=main.css.map */
