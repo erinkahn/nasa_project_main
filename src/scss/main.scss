@@ -9,7 +9,7 @@
 @import 'partials/header';
 @import 'partials/news';
 @import 'partials/about';
-// @import 'partials/whatever'
+
 
 * {
 	box-sizing: border-box;
@@ -21,13 +21,15 @@ body {
 	color: white;
 }
 
-section {
+section.main-section {
 	min-height: 100vh;
-	&.home {
-		height: 100vh;
-	}
-}
+	display: none;
 
-// .hide{
-// 	// display: none;
-// }
+	&#home {
+		display: flex;
+	}
+	&.active {
+		display: flex;
+	}
+	
+}

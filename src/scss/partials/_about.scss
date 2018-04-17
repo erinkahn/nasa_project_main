@@ -1,6 +1,6 @@
 #about{
 
-    display: flex;
+    // display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
 
     .about{
         width: 70%;
-        margin-top: 90px;
+        margin: 30% 0;
 
         h1{
             white-space: nowrap;
@@ -24,7 +24,7 @@
         h2{
             font-size: 1.3em;
             font-family: 'Montserrat', sans-serif;
-            line-height: 1.3em;
+            line-height: 1.3em;             
         }
 
         p{
@@ -65,5 +65,14 @@
                 width: 75%;
             }
         }
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(2.0);
     }
 }
