@@ -86,7 +86,23 @@
             }
         }
     }
+
+    .aboutToTop{
+        margin-bottom: 0;
+        
+        a{
+            margin-bottom: 0;
+            cursor: pointer;
+
+            img{
+                width: 35%;
+            }
+        }
+    }
+
 }
+
+
 
 @keyframes zoom {
     0% {

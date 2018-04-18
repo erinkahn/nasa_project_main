@@ -1,6 +1,22 @@
-h1{
+#news{
+	
+
+	// display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-family: 'Gugi', cursive;
-    font-size: 1.8em;
-    white-space: nowrap;
+
+    h1{
+        font-family: 'Gugi', cursive;
+        font-size: 1.8em;
+        margin-bottom: 30px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
 }
+
+
+
+	

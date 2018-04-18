@@ -325,11 +325,21 @@ table {
 	font-size: 1.3em;
 	display: flex;
 	justify-content: center;
-	padding-bottom: 20%;
 }
 
 #missions .mission.missionSeeMore a:hover {
 	color: red;
+}
+
+#missions .mission.missionBackToTop {
+	margin-bottom: 0;
+}
+
+#missions .mission.missionBackToTop a {
+	display: flex;
+	align-self: center;
+	margin-bottom: 0;
+	cursor: pointer;
 }
 
 .nasa-logo {
@@ -343,10 +353,18 @@ table {
 	z-index: 2;
 }
 
-h1 {
+#news {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
+}
+
+#news h1 {
 	font-family: 'Gugi', cursive;
 	font-size: 1.8em;
+	margin-bottom: 30px;
+	text-align: center;
 	white-space: nowrap;
 }
 
@@ -441,6 +459,19 @@ h1 {
 	#about .about5 img {
 		width: 75%;
 	}
+}
+
+#about .aboutToTop {
+	margin-bottom: 0;
+}
+
+#about .aboutToTop a {
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+#about .aboutToTop a img {
+	width: 35%;
 }
 
 @keyframes zoom {

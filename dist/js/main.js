@@ -62,6 +62,17 @@ for (i = 0; i < menuItems.length; i++) {
 }
 
 //---------------------------------------------------------------------------------
+// arrow scroll to top
+
+document.querySelector(".missionBackToTop a").addEventListener('click', function () {
+	TweenMax.to(window, 2, { scrollTo: '#top' });
+});
+
+document.querySelector(".aboutToTop a").addEventListener('click', function () {
+	TweenMax.to(window, 2, { scrollTo: '#top' });
+});
+
+//---------------------------------------------------------------------------------
 // waypoints
 
 // var waypoint = new Waypoint({
