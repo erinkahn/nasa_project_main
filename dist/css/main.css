@@ -57,13 +57,45 @@ table {
 	background-image: url(../img/earth2.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 25%;
+	width: 29%;
 	height: 0;
-	padding-bottom: 25%;
+	padding-bottom: 29%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	animation-iteration-count: infinite;
+	animation: rotating 20s linear infinite;
+}
+
+.home .earth:hover {
+	animation-play-state: paused;
+}
+
+.home .mars {
+	background-image: url(../img/mars.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 18%;
+	height: 0;
+	padding-bottom: 18%;
+	position: absolute;
+	top: 20%;
+	left: 94%;
+	opacity: 0.5;
+}
+
+.home .mercury {
+	background-image: url(../img/mercury.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 14%;
+	height: 0;
+	padding-bottom: 14%;
+	position: absolute;
+	top: 85%;
+	left: -10%;
+	opacity: 0.5;
 }
 
 .home .orb {
@@ -158,13 +190,22 @@ table {
 	top: 50%;
 }
 
+@keyframes rotating {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
 #missions {
 	flex-direction: column;
 	justify-content: center;
 }
 
 #missions h1 {
-	margin: 13% 0;
+	margin: 33% 0 20% 0;
 	text-align: center;
 	font-family: 'Gugi', cursive;
 	font-size: 1.8em;
@@ -172,7 +213,7 @@ table {
 }
 
 #missions .mission {
-	margin: 0 auto;
+	margin: 30% auto;
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
@@ -299,6 +340,7 @@ table {
 	width: 130px;
 	height: 130px;
 	margin: 30px;
+	z-index: 2;
 }
 
 h1 {
@@ -330,10 +372,27 @@ h1 {
 	white-space: nowrap;
 }
 
-#about .about h2 {
+#about .about div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#about .about div h3 {
+	padding: 0 8px 0 0;
 	font-size: 1.3em;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.3em;
+}
+
+#about .about div h3:first-child {
+	padding-right: 0;
+}
+
+#about .about div h3:hover {
+	color: red;
+	transform: scale(2);
+	transition: 1s;
 }
 
 #about .about p {

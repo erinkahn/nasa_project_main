@@ -3,7 +3,7 @@ console.log(`Hello World from app.js! 5 4 3 2 1 Lift Off!!! #nasaproject #erinan
 // TweenMax.to('.earth', 100, {
 // 	rotation: -360,
 // 	repeat: -1,
-// 	ease: Linear.easeNone
+// 	// ease: Linear.easeNone
 // });
 
 // TweenMax.to('.orb-1', 100, {
@@ -63,4 +63,24 @@ for (i=0; i < menuItems.length; i++) {
 }
 
 
- 
+ //---------------------------------------------------------------------------------
+// waypoints
+
+// var waypoint = new Waypoint({
+// 	element: document.getElementById('waypoint'),
+// 	handler: function(direction) {
+// 	  console.log('Scrolled to waypoint!')
+// 	}
+//   })
+
+
+
+
+
+
+
+
+
+
+
+

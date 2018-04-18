@@ -5,13 +5,46 @@
 		background-image: url(../img/earth2.png);
 		background-size: cover;
 		background-repeat: no-repeat;
-		width: 25%;
+		width: 29%;
 		height: 0;
-		padding-bottom: 25%;
+		padding-bottom: 29%;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+
+		animation-iteration-count: infinite;
+		animation: rotating 20s linear infinite;
+
+		&:hover{
+			animation-play-state: paused;
+		}
+	}
+
+	.mars{
+		background-image: url(../img/mars.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 18%;
+		height: 0;
+		padding-bottom: 18%;
+		position: absolute;
+		top: 20%;
+		left: 94%;
+		opacity: 0.5;
+	}
+
+	.mercury{
+		background-image: url(../img/mercury.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 14%;
+		height: 0;
+		padding-bottom: 14%;
+		position: absolute;
+		top: 85%;
+		left: -10%;
+		opacity: 0.5;
 	}
 
 	.orb{
@@ -107,3 +140,21 @@
 		}
 	}
 }
+
+
+@keyframes rotating{
+	0% { transform: translate(-50%, -50%) rotate(0deg);}
+	100% { transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
