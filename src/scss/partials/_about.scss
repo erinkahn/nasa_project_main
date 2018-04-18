@@ -15,7 +15,7 @@
 
     .about{
         width: 70%;
-        margin: 30% 0;
+        margin: 30% 0 0 0;
 
         h1{
             white-space: nowrap;
@@ -27,8 +27,15 @@
             flex-direction: row;
             justify-content: center;
 
+            @media screen and (max-width: 560px){
+                flex-direction: column;
+                display: flex;
+            }
+
 
             h3{ 
+
+                position: relative;
                 &:first-child{
                     padding-right: 0;
                 }
@@ -37,12 +44,6 @@
                 font-size: 1.3em;
                 font-family: 'Montserrat', sans-serif;
                 line-height: 1.3em;  
-
-                &:hover{
-                    color: red;
-                    transform: scale(2);
-                    transition: 1s;
-                }           
             }
 
         }
@@ -54,6 +55,7 @@
             letter-spacing: 0.09em;
             font-weight: 300;
             padding-bottom: 20px;
+
              //tablet and desktop
              @media screen and (min-width: 768px){
                 margin-top: 30px;
@@ -93,22 +95,13 @@
         a{
             margin-bottom: 0;
             cursor: pointer;
+            padding-bottom: 30px;
 
             img{
-                width: 35%;
+                height: 30px;
             }
         }
     }
 
 }
 
-
-
-@keyframes zoom {
-    0% {
-        transform: scale(1.0);
-    }
-    100% {
-        transform: scale(2.0);
-    }
-}

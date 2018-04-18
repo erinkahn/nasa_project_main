@@ -64,12 +64,6 @@ table {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	animation-iteration-count: infinite;
-	animation: rotating 20s linear infinite;
-}
-
-.home .earth:hover {
-	animation-play-state: paused;
 }
 
 .home .mars {
@@ -109,23 +103,12 @@ table {
 
 .home .orb a {
 	font-family: 'Montserrat', sans-serif;
-	opacity: 0;
 	display: flex;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
 	margin-top: -10px;
 	justify-content: center;
-}
-
-@media screen and (max-width: 767px) {
-	.home .orb a {
-		opacity: 0.5;
-	}
-}
-
-.home .orb a:hover {
-	opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -138,6 +121,8 @@ table {
 	width: 40%;
 	height: 0;
 	padding-bottom: 40%;
+	animation-iteration-count: infinite;
+	animation: rotating 20s linear infinite;
 }
 
 .home .orb.orb-1 .about-btn, .home .orb.orb-1 .missions-btn {
@@ -148,6 +133,8 @@ table {
 	padding-bottom: 11%;
 	position: absolute;
 	transform: translate(-50%, -50%);
+	animation-iteration-count: infinite;
+	animation: rotatingReverse 20s linear infinite;
 }
 
 .home .orb.orb-1 .about-btn {
@@ -162,10 +149,20 @@ table {
 	left: 50%;
 }
 
+.home .orb.orb-1:hover {
+	animation-play-state: paused;
+}
+
+.home .orb.orb-1:hover .about-btn, .home .orb.orb-1:hover .missions-btn {
+	animation-play-state: paused;
+}
+
 .home .orb.orb-2 {
 	width: 55%;
 	height: 0;
 	padding-bottom: 55%;
+	animation-iteration-count: infinite;
+	animation: rotatingReverse 20s linear infinite;
 }
 
 .home .orb.orb-2 .news-btn, .home .orb.orb-2 .home-btn {
@@ -176,6 +173,8 @@ table {
 	padding-bottom: 11%;
 	position: absolute;
 	transform: translate(-50%, -50%);
+	animation-iteration-count: infinite;
+	animation: rotating 20s linear infinite;
 }
 
 .home .orb.orb-2 .news-btn {
@@ -190,6 +189,14 @@ table {
 	top: 50%;
 }
 
+.home .orb.orb-2:hover {
+	animation-play-state: paused;
+}
+
+.home .orb.orb-2:hover .news-btn, .home .orb.orb-2:hover .home-btn {
+	animation-play-state: paused;
+}
+
 @keyframes rotating {
 	0% {
 		transform: translate(-50%, -50%) rotate(0deg);
@@ -199,13 +206,31 @@ table {
 	}
 }
 
+@keyframes rotatingReverse {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+}
+
+@keyframes rotatingNavItem {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+}
+
 #missions {
 	flex-direction: column;
 	justify-content: center;
 }
 
 #missions h1 {
-	margin: 33% 0 20% 0;
+	margin: 33% 0 0 0;
 	text-align: center;
 	font-family: 'Gugi', cursive;
 	font-size: 1.8em;
@@ -213,7 +238,7 @@ table {
 }
 
 #missions .mission {
-	margin: 30% auto;
+	margin: 8% auto;
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
@@ -333,13 +358,19 @@ table {
 
 #missions .mission.missionBackToTop {
 	margin-bottom: 0;
+	margin: 0 auto;
 }
 
 #missions .mission.missionBackToTop a {
 	display: flex;
 	align-self: center;
-	margin-bottom: 0;
+	justify-content: center;
 	cursor: pointer;
+	padding-bottom: 30px;
+}
+
+#missions .mission.missionBackToTop a img {
+	height: 30px;
 }
 
 .nasa-logo {
@@ -368,6 +399,23 @@ table {
 	white-space: nowrap;
 }
 
+#news .newsToTop {
+	margin-bottom: 0;
+	margin: 0 auto;
+}
+
+#news .newsToTop a {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	cursor: pointer;
+	padding-bottom: 30px;
+}
+
+#news .newsToTop a img {
+	height: 30px;
+}
+
 #about {
 	flex-direction: column;
 	justify-content: center;
@@ -383,7 +431,7 @@ table {
 
 #about .about {
 	width: 70%;
-	margin: 30% 0;
+	margin: 30% 0 0 0;
 }
 
 #about .about h1 {
@@ -396,7 +444,15 @@ table {
 	justify-content: center;
 }
 
+@media screen and (max-width: 560px) {
+	#about .about div {
+		flex-direction: column;
+		display: flex;
+	}
+}
+
 #about .about div h3 {
+	position: relative;
 	padding: 0 8px 0 0;
 	font-size: 1.3em;
 	font-family: 'Montserrat', sans-serif;
@@ -405,12 +461,6 @@ table {
 
 #about .about div h3:first-child {
 	padding-right: 0;
-}
-
-#about .about div h3:hover {
-	color: red;
-	transform: scale(2);
-	transition: 1s;
 }
 
 #about .about p {
@@ -468,19 +518,11 @@ table {
 #about .aboutToTop a {
 	margin-bottom: 0;
 	cursor: pointer;
+	padding-bottom: 30px;
 }
 
 #about .aboutToTop a img {
-	width: 35%;
-}
-
-@keyframes zoom {
-	0% {
-		transform: scale(1);
-	}
-	100% {
-		transform: scale(2);
-	}
+	height: 30px;
 }
 
 * {
@@ -491,6 +533,7 @@ body {
 	background-image: url(../img/background.png);
 	background-attachment: fixed;
 	color: white;
+	overflow-x: hidden;
 }
 
 section.main-section {

@@ -12,13 +12,6 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-
-		animation-iteration-count: infinite;
-		animation: rotating 20s linear infinite;
-
-		&:hover{
-			animation-play-state: paused;
-		}
 	}
 
 	.mars{
@@ -56,12 +49,8 @@
 		border-radius: 50%;
 
 		a{
-			// show menu items on mobile since thers no hover on mobile
-			@media screen and (max-width: 767px){
-				opacity: 0.5;
-			}
+
 			font-family: 'Montserrat', sans-serif;
-			opacity: 0;
 			display: flex;
 			color: #fff;
 			text-decoration: none;
@@ -69,14 +58,11 @@
 			margin-top: -10px;
 			justify-content: center;
 
-			&:hover{
-				opacity: 1;
-			}
-
 
 			@media screen and (min-width: 768px){
 				font-size: 1.2em;
 			}
+
 		}
 
 		
@@ -93,6 +79,9 @@
 				padding-bottom: 11%;
 				position: absolute;
 				transform: translate(-50%, -50%);
+
+				animation-iteration-count: infinite;
+				animation: rotatingReverse 20s linear infinite;
 			}
 
 			.about-btn{
@@ -107,10 +96,20 @@
 				left: 50%;
 			}
 
+			animation-iteration-count: infinite;
+			animation: rotating 20s linear infinite;
+
+			&:hover{
+				animation-play-state: paused;
+				.about-btn, .missions-btn{ 
+					animation-play-state: paused;
+				}
+			}
 
 		}
 		
 		&.orb-2{
+
 			width: 55%;
 			height: 0;
 			padding-bottom: 55%;
@@ -123,6 +122,9 @@
 				padding-bottom: 11%;
 				position: absolute;
 				transform: translate(-50%, -50%);
+				animation-iteration-count: infinite;
+				animation: rotating 20s linear infinite;
+
 			}
 
 			.news-btn{
@@ -136,10 +138,22 @@
 				left: 100%;
 				top: 50%;
 			}
+
+			animation-iteration-count: infinite;
+			animation: rotatingReverse 20s linear infinite;
+
+			&:hover{
+				animation-play-state: paused;
+				.news-btn, .home-btn {
+					animation-play-state: paused;
+				}
+			}
 			
 		}
 	}
 }
+
+
 
 
 @keyframes rotating{
@@ -147,11 +161,15 @@
 	100% { transform: translate(-50%, -50%) rotate(360deg);}
 }
 
+@keyframes rotatingReverse{
+	0% { transform: translate(-50%, -50%) rotate(0deg);}
+	100% { transform: translate(-50%, -50%) rotate(-360deg);}
+}
 
-
-
-
-
+@keyframes rotatingNavItem{
+	0% { transform: translate(-50%, -50%) rotate(0deg);}
+	100% {transform: translate(-50%, -50%) rotate(-360deg);}
+}
 
 
 

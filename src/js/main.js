@@ -83,13 +83,22 @@ document.querySelector(".aboutToTop a").addEventListener('click', function(){
 // waypoints
 
 // var waypoint = new Waypoint({
-// 	element: document.getElementById('waypoint'),
+// 	element: document.querySelector('.mission1'),
 // 	handler: function(direction) {
-// 	  console.log('Scrolled to waypoint!')
-// 	}
-//   })
+// 	  console.log('Scrolled to waypoint!');
+// 	  TweenMax.from('.mission1', 0.5, {delay: 1, opacity: 0, x: -2000, ease: Linear.easeNone});
+// 	},
+// 	// offset: '90%'
+//   });
 
+//---------------------------------------------------------------------------------
+//nasa stands for
 
+// when you click about, stagger in order scale up, overlap by 1 second
+document.querySelector('.about-btn').addEventListener('click', function(){
+	console.log("about button clicked")
+	TweenMax.staggerTo('.about1 div h3', 2, { color:"#ff0004", yoyo:true, top:"180px",  repeat: 1, scale:2, ease: Linear.easeNone}, 1);
+})
 
 
 
