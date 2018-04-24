@@ -2,6 +2,17 @@
 
 console.log("Hello World from app.js! 5 4 3 2 1 Lift Off!!! #nasaproject #erinandcass");
 
+var $earth = document.querySelector(".earth");
+var $orb = document.querySelector(".orb");
+
+window.addEventListener("mousemove", function () {
+	// console.log(event.x/window.innerWidth, event.y/window.innerHeight);
+
+	var multiplierX = -(event.x / window.innerWidth - 0.5) * 2;
+	$earth.style.left = 50 + multiplierX + "%"; // 50%
+	// $orb.style.left = 50 + multiplierX + "%";
+});
+
 // TweenMax.to('.earth', 100, {
 // 	rotation: -360,
 // 	repeat: -1,
@@ -46,7 +57,7 @@ var goToSection = function goToSection(event) {
 
 	var mainSections = document.querySelectorAll('.main-section:not(#home)');
 
-	for (j = 0; j < mainSections.length; j++) {
+	for (var j = 0; j < mainSections.length; j++) {
 		mainSections[j].classList.remove("active");
 	}
 	document.querySelector(".main-section" + sectionID).classList.add("active");
@@ -57,7 +68,7 @@ var goToSection = function goToSection(event) {
 // loop through the menu items
 // when you click one item, call the function gotosection
 var menuItems = document.querySelectorAll('.orb a');
-for (i = 0; i < menuItems.length; i++) {
+for (var i = 0; i < menuItems.length; i++) {
 	menuItems[i].addEventListener("click", goToSection);
 }
 

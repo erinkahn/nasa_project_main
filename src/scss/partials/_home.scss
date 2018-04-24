@@ -1,30 +1,27 @@
 .home {
-	
-
-	.earth{
-		background-image: url(../img/earth2.png);
-		background-size: cover;
+	 %earth-position{
+	 	background-size: cover;
 		background-repeat: no-repeat;
-		width: 29%;
 		height: 0;
-		padding-bottom: 29%;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+	 }
+
+	.earth{
+		@extend %earth-position;
+		background-image: url(../img/earth2.png);
+		width: 29%;
+		padding-bottom: 29%;
 		z-index: 2;
 	}
 	.smoke {
-		background-image: url(../img/smokeEffect.png);
-		background-size: cover;
-		background-repeat: no-repeat;
+		@extend %earth-position;
+		pointer-events: none;
+		background-image: url(../img/smokeEffect.png);		
 		width: 40%;
-		height: 0;
 		padding-bottom: 40%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 		z-index: 1;
 		opacity: .2;
 		animation-iteration-count: infinite;
@@ -65,7 +62,7 @@
 		transform: translate(-50%, -50%);
 		border: 0.6px solid #34436B;
 		border-radius: 50%;
-		
+
 
 		a{
 

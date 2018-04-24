@@ -1,12 +1,6 @@
 "use strict";
 
-var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol" ? function (obj) {
-  return typeof obj === "undefined" ? "undefined" : _typeof2(obj);
-} : function (obj) {
-  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof2(obj);
-};
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 (function (f) {
   if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === "object" && typeof module !== "undefined") {
@@ -960,7 +954,6 @@ var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "sym
             // Extract Rotation
             var x = (beta || 0) / MAGIC_NUMBER,
 
-
             //  -90 :: 90
             y = (gamma || 0) / MAGIC_NUMBER; // -180 :: 180
 
@@ -1063,5 +1056,4 @@ var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "sym
       module.exports = Parallax;
     }, { "object-assign": 1, "raf": 4 }] }, {}, [5])(5);
 });
-//# sourceMappingURL=parallax.js.map
 //# sourceMappingURL=parallax.js.map
