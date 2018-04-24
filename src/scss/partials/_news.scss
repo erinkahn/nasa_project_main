@@ -36,9 +36,22 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      -webkit-filter: grayscale(1);
+
+        h2{
+            opacity: 0;
+            transition: .2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
         &:hover {
-            -webkit-filter: grayscale(0);
+            transition: .2s;
+            h2{
+                opacity: 1;        
+            }
+            fill: #34436B;
         }
         &:nth-child(4n+1){
            width: 250px;
@@ -79,18 +92,15 @@
 
 
     .article1 {
-
         background-image: url(../img/news-1.jpg);
     }
     .article2 {
-        background-image: url(../img/news-2.jpg);
-        
+        background-image: url(../img/news-2.jpg);     
     }
     .article3 {
         background-image: url(../img/news-3.jpg);
     }
     .article4 {
-
         background-image: url(../img/news-4.jpg);
 
     }

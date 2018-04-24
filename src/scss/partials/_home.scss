@@ -29,6 +29,7 @@
 		opacity: .2;
 		animation-iteration-count: infinite;
 		animation: rotating 300s;
+		-webkit-filter:blur(1px);
 	}
 
 	.mars{
@@ -64,6 +65,7 @@
 		transform: translate(-50%, -50%);
 		border: 0.6px solid #34436B;
 		border-radius: 50%;
+		
 
 		a{
 

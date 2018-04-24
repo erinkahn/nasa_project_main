@@ -72,6 +72,10 @@ document.querySelector(".aboutToTop a").addEventListener('click', function () {
 	TweenMax.to(window, 2, { scrollTo: '#top' });
 });
 
+document.querySelector(".newsToTop a").addEventListener('click', function () {
+	TweenMax.to(window, 2, { scrollTo: '#top' });
+});
+
 //---------------------------------------------------------------------------------
 // waypoints
 
@@ -92,4 +96,18 @@ document.querySelector('.about-btn').addEventListener('click', function () {
 	console.log("about button clicked");
 	TweenMax.staggerTo('.about1 div h3', 2, { color: "#ff0004", yoyo: true, top: "180px", repeat: 1, scale: 2, ease: Linear.easeNone }, 1);
 });
+
+//// mouse move parallax
+
+// $(document).ready(function(){
+//     var windowWidth = $(window).width();
+
+//     $('.page-container ,.earth').mousemove(function(event){
+//         var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
+//         var moveY = (($(window).height() / 2) - event.pageY) * 0.1;
+//         $('.page-back').css('margin-left',moveX + 'px');
+//         $('.page-back').css('margin-top',moveY + 'px');
+//     });
+
+// });
 //# sourceMappingURL=main.js.map
