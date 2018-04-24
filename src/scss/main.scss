@@ -9,6 +9,7 @@
 @import 'partials/header';
 @import 'partials/news';
 @import 'partials/about';
+@import 'partials/stars';
 
 
 * {
@@ -20,6 +21,7 @@ body {
 	background-attachment: fixed;
 	color: white;
 	overflow-x: hidden;
+
 }
 
 section.main-section {

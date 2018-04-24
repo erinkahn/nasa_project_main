@@ -1,104 +1,124 @@
 #news{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; 
 
     h1{
         text-align: center;
         font-family: 'Gugi', cursive;
         font-size: 1.8em;
         white-space: nowrap;
-
+        margin-bottom: 30px;
     }
 
     h2{
-    color: white;
-    font-size: 2rem;
-    }
-   
+        color: white;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
 
-    .news-section{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+
     }
+   a{
+        text-decoration: none;
+    }
+    .masonry{
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: -8px; /* Adjustment for the gutter */
+        width: 100%;
+    }
+
     .article {
-        width: 350px;
-        margin: 20px;
+      flex: auto;
+      height: 250px;
+      min-width: 150px;
+      margin: 8px; /* Some gutter */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      -webkit-filter: grayscale(1);
+        &:hover {
+            -webkit-filter: grayscale(0);
+        }
+        &:nth-child(4n+1){
+           width: 250px;
+        }
+        &:nth-child(4n+2){
+           width: 325px;
+        }
+        &:nth-child(4n+3){
+           width: 180px;
+        }
+        &:nth-child(4n+4){
+           width: 380px;
+        }
+        &:nth-child(4n+5){
+           width: 275px;
+        }
+        &:nth-child(4n+6){
+           width: 300px;
+        }
+        &:nth-child(4n+7){
+           width: 150px;
+        }
+        &:nth-child(4n+8){
+           width: 400px;
+        }
     }
 
     .article h2 {
         width: 350px;
         padding: 5px 0;
         white-space: nowrap;
-        /*no wrap on super small screens like flip phones*/
-        
+        /*no wrap on super small screens like flip phones*/  
         overflow: hidden;
-        /* gets rid of horizontal scroll bar*/
-    
+        /* gets rid of horizontal scroll bar*/   
         text-overflow: ellipsis;
         /*adds an ellipsis*/
     }
-    .article figure {
-        width: 350px;
-        height: 350px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        -webkit-filter: grayscale(1);
-    }
-    .article figure:hover {
-        -webkit-filter: grayscale(0);
-    }
-    .article1 figure {
+
+
+    .article1 {
+
         background-image: url(../img/news-1.jpg);
     }
-    .article2 figure {
+    .article2 {
         background-image: url(../img/news-2.jpg);
+        
     }
-    .article3 figure {
+    .article3 {
         background-image: url(../img/news-3.jpg);
     }
-    .article4 figure {
+    .article4 {
+
         background-image: url(../img/news-4.jpg);
+
     }
-    .article5 figure {
+    .article5 {
         background-image: url(../img/news-5.jpg);
     }
-    .article6 figure {
+    .article6 {
         background-image: url(../img/news-6.jpg);
     }
-    .article7 figure {
+    .article7 {
         background-image: url(../img/news-7.jpg);
     }
-    .article8 figure {
+    .article8 {
         background-image: url(../img/news-8.jpg);
     }
-    .article9 figure {
+    .article9 {
         background-image: url(../img/news-9.jpg);
     }
-    .article10 figure {
+    .article10 {
         background-image: url(../img/news-10.jpg);
     }
-    .article11 figure {
+    .article11 {
         background-image: url(../img/news-11.jpg);
     }
-    .article12 figure {
+    .article12 {
         background-image: url(../img/news-12.jpg);
     }
-    .article13 figure {
-        background-image: url(../img/news-13.jpg);
-    }
-    .article14 figure {
-        background-image: url(../img/news-14.jpg);
-    }
-    .article15 figure {
-        background-image: url(../img/news-15.jpg);
-    }
-    .article16 figure {
-        background-image: url(../img/news-16.jpg);
-    }
+    
     
     .newsToTop{
         margin-bottom: 0;

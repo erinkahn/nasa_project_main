@@ -12,6 +12,23 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
+	.smoke {
+		background-image: url(../img/smokeEffect.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 40%;
+		height: 0;
+		padding-bottom: 40%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		opacity: .2;
+		animation-iteration-count: infinite;
+		animation: rotating 300s;
 	}
 
 	.mars{
@@ -45,7 +62,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		border: 0.6px solid rgba(0, 17, 255, 0.7);
+		border: 0.6px solid #34436B;
 		border-radius: 50%;
 
 		a{
