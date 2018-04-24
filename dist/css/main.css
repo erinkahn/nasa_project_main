@@ -385,18 +385,121 @@ table {
 }
 
 #news {
+	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
-	text-align: center;
 }
 
 #news h1 {
+	text-align: center;
 	font-family: 'Gugi', cursive;
 	font-size: 1.8em;
-	margin-bottom: 30px;
-	text-align: center;
 	white-space: nowrap;
+}
+
+#news h2 {
+	color: white;
+	font-size: 2rem;
+}
+
+#news .news-section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#news .article {
+	width: 350px;
+	margin: 20px;
+}
+
+#news .article h2 {
+	width: 350px;
+	padding: 5px 0;
+	white-space: nowrap;
+	/*no wrap on super small screens like flip phones*/
+	overflow: hidden;
+	/* gets rid of horizontal scroll bar*/
+	text-overflow: ellipsis;
+	/*adds an ellipsis*/
+}
+
+#news .article figure {
+	width: 350px;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	-webkit-filter: grayscale(1);
+}
+
+#news .article figure:hover {
+	-webkit-filter: grayscale(0);
+}
+
+#news .article1 figure {
+	background-image: url(../img/news-1.jpg);
+}
+
+#news .article2 figure {
+	background-image: url(../img/news-2.jpg);
+}
+
+#news .article3 figure {
+	background-image: url(../img/news-3.jpg);
+}
+
+#news .article4 figure {
+	background-image: url(../img/news-4.jpg);
+}
+
+#news .article5 figure {
+	background-image: url(../img/news-5.jpg);
+}
+
+#news .article6 figure {
+	background-image: url(../img/news-6.jpg);
+}
+
+#news .article7 figure {
+	background-image: url(../img/news-7.jpg);
+}
+
+#news .article8 figure {
+	background-image: url(../img/news-8.jpg);
+}
+
+#news .article9 figure {
+	background-image: url(../img/news-9.jpg);
+}
+
+#news .article10 figure {
+	background-image: url(../img/news-10.jpg);
+}
+
+#news .article11 figure {
+	background-image: url(../img/news-11.jpg);
+}
+
+#news .article12 figure {
+	background-image: url(../img/news-12.jpg);
+}
+
+#news .article13 figure {
+	background-image: url(../img/news-13.jpg);
+}
+
+#news .article14 figure {
+	background-image: url(../img/news-14.jpg);
+}
+
+#news .article15 figure {
+	background-image: url(../img/news-15.jpg);
+}
+
+#news .article16 figure {
+	background-image: url(../img/news-16.jpg);
 }
 
 #news .newsToTop {

@@ -1,20 +1,105 @@
 #news{
-	
-
-	// display: flex;
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    text-align: center;
 
     h1{
+        text-align: center;
         font-family: 'Gugi', cursive;
         font-size: 1.8em;
-        margin-bottom: 30px;
-        text-align: center;
         white-space: nowrap;
+
     }
 
+    h2{
+    color: white;
+    font-size: 2rem;
+    }
+   
+
+    .news-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .article {
+        width: 350px;
+        margin: 20px;
+    }
+
+    .article h2 {
+        width: 350px;
+        padding: 5px 0;
+        white-space: nowrap;
+        /*no wrap on super small screens like flip phones*/
+        
+        overflow: hidden;
+        /* gets rid of horizontal scroll bar*/
+    
+        text-overflow: ellipsis;
+        /*adds an ellipsis*/
+    }
+    .article figure {
+        width: 350px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-filter: grayscale(1);
+    }
+    .article figure:hover {
+        -webkit-filter: grayscale(0);
+    }
+    .article1 figure {
+        background-image: url(../img/news-1.jpg);
+    }
+    .article2 figure {
+        background-image: url(../img/news-2.jpg);
+    }
+    .article3 figure {
+        background-image: url(../img/news-3.jpg);
+    }
+    .article4 figure {
+        background-image: url(../img/news-4.jpg);
+    }
+    .article5 figure {
+        background-image: url(../img/news-5.jpg);
+    }
+    .article6 figure {
+        background-image: url(../img/news-6.jpg);
+    }
+    .article7 figure {
+        background-image: url(../img/news-7.jpg);
+    }
+    .article8 figure {
+        background-image: url(../img/news-8.jpg);
+    }
+    .article9 figure {
+        background-image: url(../img/news-9.jpg);
+    }
+    .article10 figure {
+        background-image: url(../img/news-10.jpg);
+    }
+    .article11 figure {
+        background-image: url(../img/news-11.jpg);
+    }
+    .article12 figure {
+        background-image: url(../img/news-12.jpg);
+    }
+    .article13 figure {
+        background-image: url(../img/news-13.jpg);
+    }
+    .article14 figure {
+        background-image: url(../img/news-14.jpg);
+    }
+    .article15 figure {
+        background-image: url(../img/news-15.jpg);
+    }
+    .article16 figure {
+        background-image: url(../img/news-16.jpg);
+    }
+    
     .newsToTop{
         margin-bottom: 0;
         margin: 0 auto;
@@ -32,7 +117,6 @@
             }
         }
     }
-
 }
 
 
