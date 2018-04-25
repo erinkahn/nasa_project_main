@@ -30,6 +30,11 @@
 	  background-position: center;
 	  background-size: cover;
 	  transition: .2s;
+	  display: flex;
+  	  justify-content: center;
+  	  align-items: center;
+  	  -webkit-filter: grayscale(0%);
+
 
 		h2{
 			opacity: 0;
@@ -43,7 +48,7 @@
 			width: 100%;
 			transition: .2s;
 			padding: 5px 0;
-			white-space: nowrap;
+			white-space: normal;
 			/*no wrap on super small screens like flip phones*/  
 			overflow: hidden;
 			/* gets rid of horizontal scroll bar*/   
@@ -55,6 +60,9 @@
 		&:hover {
 			h2{
 				opacity: 1;        
+			}
+			.article{
+        		// background:linear-gradient(-45deg, blue 0%, gray 100%);
 			}
 		}
 		&:nth-child(4n+1){
