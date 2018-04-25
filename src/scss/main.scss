@@ -21,8 +21,10 @@ body {
 	background-attachment: fixed;
 	color: white;
 	overflow-x: hidden;
-	// background-color: #000;
 
+}
+html{
+	background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
 }
 
 section.main-section {

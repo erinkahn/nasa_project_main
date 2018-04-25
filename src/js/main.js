@@ -1,13 +1,24 @@
 console.log(`Hello World from app.js! 5 4 3 2 1 Lift Off!!! #nasaproject #erinandcass`)
 
 var $earth = document.querySelector(".earth");
-var $orb = document.querySelector(".orb");
+var $orb1 = document.querySelector(".orb-1");
+var $orb2 = document.querySelector(".orb-2");
+var $glow = document.querySelector(".glow");
+var $smoke = document.querySelector(".smoke");
+
 
 window.addEventListener("mousemove", function() {
 	// console.log(event.x/window.innerWidth, event.y/window.innerHeight);
 
 	var multiplierX = -(event.x/window.innerWidth - 0.5) * 2;
 	$earth.style.left = 50 + multiplierX + "%";  // 50%
+	$orb1.style.left = 50 + multiplierX + "%";
+	$orb2.style.left = 50 + multiplierX + "%";  // 50%
+	$glow.style.left = 50 + multiplierX + "%";  // 50%
+	$smoke.style.left = 50 + multiplierX + "%";  // 50%
+
+  // 50%
+
 	// $orb.style.left = 50 + multiplierX + "%";
 
 })

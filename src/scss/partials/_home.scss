@@ -1,4 +1,7 @@
 .home {
+	height: 100%; 
+	overflow: hidden;
+
 	 %earth-position{
 	 	background-size: cover;
 		background-repeat: no-repeat;
@@ -15,6 +18,21 @@
 		width: 29%;
 		padding-bottom: 29%;
 		z-index: 2;
+
+	}
+	.glow{
+		@extend %earth-position;
+		pointer-events: none;
+		background-color: transparent;
+		width: 20%;
+		padding-bottom: 20%;
+		border-radius: 50%;
+		opacity: .2;
+		box-shadow: 0 0 0 rgba(45, 94, 167, 0.4);
+  		animation: pulse 6s infinite;
+  		z-index: 0;
+
+
 	}
 	.smoke {
 		@extend %earth-position;
@@ -62,6 +80,8 @@
 		transform: translate(-50%, -50%);
 		border: 0.6px solid #34436B;
 		border-radius: 50%;
+		box-shadow: 0 18px 24px 10px rgba(45, 94, 167, 0);
+
 
 
 		a{
@@ -188,6 +208,22 @@
 }
 
 
+@keyframes pulse {
+  0% {
+  		// transform: translate(-50%, -50%) scale(1);
+    	box-shadow: 0 0 80px 0 rgba(45, 94, 167, 0);
+  }
+  50% {
+  	// transform: translate(-50%, -50%) scale(1.05);
+
+      box-shadow: 0 0 100px 90px rgba(45, 94, 167, 0.8);
+  }
+  100% {
+  	  	// transform: translate(-50%, -50%) scale(1);
+
+      box-shadow: 0 0 80px 0 rgba(45, 94, 167, 0);
+  }
+}
 
 
 
