@@ -24,39 +24,9 @@ window.addEventListener("mousemove", function() {
 })
 
 
-
-// TweenMax.to('.earth', 100, {
-// 	rotation: -360,
-// 	repeat: -1,
-// 	// ease: Linear.easeNone
-// });
-
-// TweenMax.to('.orb-1', 100, {
-// 	rotation: -360,
-// 	repeat: -1,
-// 	ease: Linear.easeNone
-// });
-// TweenMax.to('.orb-1 div', 100, {
-// 	rotation: 360, 
-// 	repeat: -1,
-// 	ease: Linear.easeNone
-// });
-
-// TweenMax.to('.orb-2', 150, {
-// 	rotation: 360,
-// 	repeat: -1,
-// 	ease: Linear.easeNone
-// });
-// TweenMax.to('.orb-2 div', 150, {
-// 	rotation: -360, 
-// 	repeat: -1,
-// 	ease: Linear.easeNone
-// });
-
-
 //---------------------------------------------------------------------------------
 
-// whatever your target is/whatever you cick get the href attribute
+// whatever your target is/whatever you click get the href attribute
 // loop through the main sections
 // remove active class from all of them 
 // add active class to the current target id you click on
@@ -107,17 +77,6 @@ document.querySelector(".newsToTop a").addEventListener('click', function(){
 	
 
 
-//---------------------------------------------------------------------------------
-// waypoints
-
-// var waypoint = new Waypoint({
-// 	element: document.querySelector('.mission1'),
-// 	handler: function(direction) {
-// 	  console.log('Scrolled to waypoint!');
-// 	  TweenMax.from('.mission1', 0.5, {delay: 1, opacity: 0, x: -2000, ease: Linear.easeNone});
-// 	},
-// 	// offset: '90%'
-//   });
 
 //---------------------------------------------------------------------------------
 //nasa stands for
@@ -128,6 +87,8 @@ document.querySelector('.about-btn').addEventListener('click', function(){
 	TweenMax.staggerTo('.about1 div h3', 2, { color:"#ff0004", yoyo:true, top:"180px",  repeat: 1, scale:2, ease: Linear.easeNone}, 1);
 })
 
+
+//---------------------------------------------------------------------------------
 //// mouse move parallax
 
 // $(document).ready(function(){
