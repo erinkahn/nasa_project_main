@@ -18,9 +18,10 @@
 		width: 29%;
 		padding-bottom: 29%;
 		z-index: 2;
-
 	}
+
 	.glow{
+		
 		@extend %earth-position;
 		pointer-events: none;
 		background-color: transparent;
@@ -30,10 +31,9 @@
 		opacity: .2;
 		box-shadow: 0 0 0 rgba(45, 94, 167, 0.4);
   		animation: pulse 6s infinite;
-  		z-index: 0;
-
-
+		z-index: 0;
 	}
+
 	.smoke {
 		@extend %earth-position;
 		pointer-events: none;
