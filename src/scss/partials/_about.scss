@@ -96,29 +96,7 @@
             
         }
 
-        .starS{
-            position: relative;
-
-            img{
-                position: absolute;
-                @media screen and (max-width: 560px){
-                    width: 55%;
-                    left: 62%;
-                    // margin-top: -31px;
-                }
-                @media screen and (min-width: 561px){
-                    margin-top: -100px;
-                    left: 68%;
-                    width: 48%;
-                }
-                @media screen and (min-width: 1000px){
-                    left: 70%;
-                    width: 30%;
-                }
-            }
-            
-        }
-
+    
         iframe{
             @media screen and (min-width: 768px){
                 width: 560px; 
@@ -132,16 +110,100 @@
     }
 
     .about5{
+        position: relative;
+        
         img{
             width: 100%;
-            @media screen and (min-width: 1024px) {
+            @media screen and (min-width: 768px) {
                 width: 75%;
+            }
+            @media screen and (min-width: 1224px) {
+                width: 65%;
+            }
+        }
+
+        div{
+            background-color: transparent;
+            position: absolute;
+            height: 17px;
+            border-radius: 90%;
+            width: 17px;
+
+            //AMES
+            &.dot1{
+               top: 45%;
+               left: 13%;
+               position: absolute;
+            }
+
+            //AFRC
+            &.dot2{
+               top: 53%;
+               left: 17%;
+               position: absolute;
+            }
+
+            //JSC
+            &.dot3{
+                left: 50%;
+                top: 77%;
+                position: absolute;
+            }
+
+            //SSC
+            &.dot4{
+                left: 60%;
+                top: 70%;
+                position: absolute;
+            }
+
+            //MSFC
+            &.dot5{
+                left: 65%;
+                top: 60%;
+                position: absolute;
+            }
+
+            //KSC
+            &.dot6{
+                left: 79%;
+                top: 80%;
+                position: absolute;
+            }
+
+            //GRC
+            &.dot7{
+                left: 69%;
+                top: 39%;
+                position: absolute;
+            }
+
+            //HQ
+            &.dot8{
+                left: 76%;
+                top: 45%;
+                position: absolute;
+            }
+
+            //GSFC
+            &.dot9{
+                left: 78%;
+                top: 41%;
+                position: absolute;
+            }
+
+            //LaRC
+            &.dot10{
+                left: 79%;
+                top: 47%;
+                position: absolute;
             }
         }
     }
 
     .aboutToTop{
         margin-bottom: 0;
+        margin-top: 50%;
         
         a{
             margin-bottom: 0;
@@ -153,6 +215,7 @@
             }
         }
     }
+
 
 }
 
