@@ -15,8 +15,8 @@
 	.earth{
 		@extend %earth-position;
 		background-image: url(../img/earth2.png);
-		width: 29%;
-		padding-bottom: 29%;
+		width: 35%;
+		padding-bottom: 35%;
 		z-index: 2;
 	}
 
@@ -103,9 +103,9 @@
 
 		
 		&.orb-1{
-			width: 40%;
+			width: 52%;
 			height: 0;
-			padding-bottom: 40%;
+			padding-bottom: 52%;
 
 			.about-btn, .missions-btn{
 				background-size: cover;
@@ -146,9 +146,9 @@
 		
 		&.orb-2{
 
-			width: 55%;
+			width: 70%;
 			height: 0;
-			padding-bottom: 55%;
+			padding-bottom: 70%;
 
 			.news-btn, .home-btn{
 				background-size: cover;
