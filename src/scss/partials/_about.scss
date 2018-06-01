@@ -37,7 +37,7 @@
 
                 position: relative;
                 &:first-child{
-                    padding-right: 0;
+                    padding-right: 8px;
                 }
 
                 padding: 0 8px 0 0;
@@ -66,6 +66,57 @@
             @media screen and (min-width: 1024px){
                 margin: 0 14%;
             }
+
+            
+            @media screen and (min-width: 1072px){
+                &.typewriter{
+                    overflow: hidden; /* Ensures the content is not revealed until the animation */
+                    border-right: .15em solid transparent; /* The typwriter cursor */
+                    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+                    letter-spacing: .15em; /* Adjust as needed */
+                    animation: typing 3.5s steps(30, end);  
+                    white-space: nowrap;
+                    animation-delay: 2s;  
+                }
+            }
+            
+        }
+
+        .astro{
+            position: relative;
+
+            img{
+                position: absolute;
+                @media screen and (max-width: 560px){
+                    width: 22%;
+                    right: 38%;
+                    top: 10%;
+                }
+            }
+            
+        }
+
+        .starS{
+            position: relative;
+
+            img{
+                position: absolute;
+                @media screen and (max-width: 560px){
+                    width: 55%;
+                    left: 62%;
+                    // margin-top: -31px;
+                }
+                @media screen and (min-width: 561px){
+                    margin-top: -100px;
+                    left: 68%;
+                    width: 48%;
+                }
+                @media screen and (min-width: 1000px){
+                    left: 70%;
+                    width: 30%;
+                }
+            }
+            
         }
 
         iframe{
@@ -103,5 +154,11 @@
         }
     }
 
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
