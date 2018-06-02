@@ -3,12 +3,10 @@
 
 
 #missions{
-    display: flex;
     flex-direction: column;
     justify-content: center;
 
     h1{
-        font-size: 0.9em;
         @media screen and (max-width:767px){
             margin-bottom: 30%;
         }
