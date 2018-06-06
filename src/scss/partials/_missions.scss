@@ -3,7 +3,6 @@
 
 
 #missions{
-    display: flex;
     flex-direction: column;
     justify-content: center;
 
@@ -19,34 +18,31 @@
     }
 
     .mission{
-        margin: 8% auto;
+        margin: auto 12%;
         justify-content: center;
         display: flex;
         flex-direction: column;
-        width: 70%;
-        @media screen and (min-width: 870px){
+        width: 80%;
+        margin-bottom: 30%;
+        @media screen and (min-width: 1024px){
+            margin: 16% auto;
             flex-direction: row;
-            margin: 0 auto;
-            width: 80%;
-            
-            div{
-               margin-top: 90px;
-            }
+            align-items: center;
         }
 
         h1{
             padding: 0;
-            margin: 10% auto;
+            margin: 0% auto;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             line-height: 1.8em;
             font-size: 1em;
             @media screen and (min-width: 500px){
-                margin: 5% auto;
+                margin: 0 auto;
                 max-width: 300px;
             }
 
-            @media screen and (min-width: 870px){
+            @media screen and (min-width: 1024px){
                 font-size: 1.3em; 
                 text-align: left;
                 justify-content: flex-start;
@@ -65,7 +61,7 @@
             font-weight: 300;
             margin-top: 20px;
             
-            @media screen and (min-width: 870px){
+            @media screen and (min-width: 1024px){
                 justify-content: left;
                 font-size: 1em;
                 margin-top: 8px;
@@ -73,25 +69,13 @@
         }
 
         img{
-            max-width: 260px;
-            margin: 0px auto;
-            justify-content: center;
-            align-self: center;
-            display: flex;
-            border: 2px solid #2d5da7;
-            @media screen and (min-width: 500px){
-                max-width: 300px;
+            @media screen and (max-width: 1023px){
+                max-height: 212px;
+                align-self: center;
+                padding-right: 0px;
             }
-
-            //tablet and desktop
-            @media screen and (min-width: 768px){
-                height: 240px;
-                max-width: 320px;
-            }
-            @media screen and (min-width: 870px){
-                align-self: left;
-                height: 230px;
-                margin: -48px 50px 0 0;
+            @media screen and (min-width: 1024px){
+                margin-top: -93px;
             }
         }
 
@@ -104,14 +88,22 @@
             font-weight: 300;
             padding-bottom: 30%;
             text-align: center;
+            @media screen and (min-width: 600px){
+                font-size: 0.8em;
+                margin: auto 10%;
+                line-height: 2em;
+            }
+            @media screen and (min-width: 768px){
+                font-size: 0.82em;
+                margin: auto 10%;
+                line-height: 2.2em;
+            }
             
-            //tablet and desktop
-            @media screen and (min-width: 870px){
-                margin-top: 30px;
+            @media screen and (min-width: 1024px){
                 padding-top: 0;
-                max-width: 530px;
-                font-size: 0.9em;
                 text-align: left;
+                max-width: 530px;
+                margin: 30px 0 0 0;
             }
         }
 

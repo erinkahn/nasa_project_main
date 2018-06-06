@@ -17,10 +17,6 @@ window.addEventListener("mousemove", function () {
 	$orb2.style.left = 50 + multiplierX + "%"; // 50%
 	$glow.style.left = 50 + multiplierX + "%"; // 50%
 	$smoke.style.left = 50 + multiplierX + "%"; // 50%
-
-	// 50%
-
-	// $orb.style.left = 50 + multiplierX + "%";
 });
 
 //---------------------------------------------------------------------------------
@@ -78,17 +74,56 @@ document.querySelector('.about-btn').addEventListener('click', function () {
 });
 
 //---------------------------------------------------------------------------------
-//// mouse move parallax
+// dots - our centers click and show name
 
-// $(document).ready(function(){
-//     var windowWidth = $(window).width();
+document.querySelector('.dot1').addEventListener('click', function () {
+	console.log('first dot clicked');
+	document.querySelector('.ames').classList.toggle('show');
+});
 
-//     $('.page-container ,.earth').mousemove(function(event){
-//         var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
-//         var moveY = (($(window).height() / 2) - event.pageY) * 0.1;
-//         $('.page-back').css('margin-left',moveX + 'px');
-//         $('.page-back').css('margin-top',moveY + 'px');
-//     });
+document.querySelector('.dot2').addEventListener('click', function () {
+	console.log('second dot clicked');
+	document.querySelector('.afrc').classList.toggle('show');
+});
 
-// });
+document.querySelector('.dot3').addEventListener('click', function () {
+	console.log('third dot clicked');
+	document.querySelector('.jsc').classList.toggle('show');
+});
+
+document.querySelector('.dot4').addEventListener('click', function () {
+	console.log('fourth dot clicked');
+	document.querySelector('.ssc').classList.toggle('show');
+});
+
+document.querySelector('.dot5').addEventListener('click', function () {
+	console.log('fifth dot clicked');
+	document.querySelector('.msfc').classList.toggle('show');
+});
+
+document.querySelector('.dot6').addEventListener('click', function () {
+	console.log('sixth dot clicked');
+	document.querySelector('.ksc').classList.toggle('show');
+});
+
+document.querySelector('.dot7').addEventListener('click', function () {
+	console.log('seventh dot clicked');
+	document.querySelector('.grc').classList.toggle('show');
+});
+
+document.querySelector('.dot8').addEventListener('click', function () {
+	console.log('eighth dot clicked');
+	document.querySelector('.hq').classList.toggle('show');
+});
+
+document.querySelector('.dot9').addEventListener('click', function () {
+	console.log('ninth dot clicked');
+	document.querySelector('.gsfc').classList.toggle('show');
+});
+
+document.querySelector('.dot10').addEventListener('click', function () {
+	console.log('tenth dot clicked');
+	document.querySelector('.lrc').classList.toggle('show');
+});
+//# sourceMappingURL=main.js.map
 //# sourceMappingURL=main.js.map
