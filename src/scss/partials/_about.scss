@@ -120,7 +120,7 @@
         }
 
         div{
-            background-color: yellow;
+            cursor: pointer;
             position: absolute;
             height: 24px;
             border-radius: 90%;
@@ -131,8 +131,14 @@
                top: 45%;
                left: 13%;
                position: absolute;
-               @media screen and (min-width1180px){
-
+               @media screen and (min-width: 1024px){
+                    top: 42%;
+               }
+               @media screen and (min-width: 1224px){
+                    left: 17.3%;
+               }
+               @media screen and (min-width: 1440px){
+                    left: 17.8%;
                }
             }
 
@@ -141,6 +147,15 @@
                top: 53%;
                left: 17%;
                position: absolute;
+               @media screen and (min-width: 1024px){
+                    top: 51%;
+               }
+               @media screen and (min-width: 1224px){
+                    left: 21.5%;
+               }
+               @media screen and (min-width: 1440px){
+                    top: 50%;
+               }
             }
 
             //JSC
@@ -148,6 +163,9 @@
                 left: 50%;
                 top: 77%;
                 position: absolute;
+                @media screen and (min-width: 1440px){
+                    top: 76%;
+                }
             }
 
             //SSC
@@ -155,6 +173,16 @@
                 left: 60%;
                 top: 70%;
                 position: absolute;
+                @media screen and (min-width: 1024px){
+                    top: 69%;
+                    left: 59%;
+                }
+                @media screen and (min-width: 1224px){
+                    left: 58%;
+                }
+                @media screen and (min-width: 1440px){
+                    left: 58.6%;
+                }
             }
 
             //MSFC
@@ -162,6 +190,12 @@
                 left: 65%;
                 top: 60%;
                 position: absolute;
+                @media screen and (min-width: 1024px){
+                    top: 58%;
+                }
+                @media screen and (min-width: 1224px){
+                    left: 63%;
+                }
             }
 
             //KSC
@@ -169,6 +203,12 @@
                 left: 79%;
                 top: 80%;
                 position: absolute;
+                @media screen and (min-width: 1024px){
+                    top: 79%;
+                }
+                @media screen and (min-width: 1224px){
+                    left: 75%;
+                }
             }
 
             //GRC
@@ -176,6 +216,16 @@
                 left: 69%;
                 top: 39%;
                 position: absolute;
+                @media screen and (min-width: 1024px){
+                    top: 36%;
+                }
+                @media screen and (min-width: 1224px){
+                    left: 66%;
+                }
+                @media screen and (min-width: 1440px){
+                    left: 66.7%;
+                    top: 35%;
+                }
             }
 
             //HQ
@@ -183,6 +233,17 @@
                 left: 74.3%;
                 top: 45.3%;
                 position: absolute;
+                @media screen and (min-width: 1024px){
+                    left: 75.3%;
+                    top: 41.3%;
+                }
+                @media screen and (min-width: 1224px){
+                    left: 72.3%;
+                }
+                @media screen and (min-width: 1440px){
+                    left: 72.8%;
+                    top: 40%;
+                }
             }
 
             //GSFC
@@ -190,6 +251,15 @@
                 left: 78%;
                 top: 41%;
                 position: absolute;
+                @media screen and (min-width: 1024px){
+                    top: 38%;
+                }
+                @media screen and (min-width: 1224px){
+                    left: 74%;
+                }
+                @media screen and (min-width: 1440px){
+                    top: 37%;
+                }
             }
 
             //LaRC
@@ -197,6 +267,15 @@
                 left: 79%;
                 top: 47%;
                 position: absolute;
+                @media screen and (min-width: 1024px){
+                    top: 45%;
+                }
+                @media screen and (min-width: 1224px){
+                    left: 75%;
+                }
+                @media screen and (min-width: 1440px){
+                    top: 44%;
+                }
             }
         }
     }
@@ -246,7 +325,7 @@
 
         a{
             font-family: 'Montserrat', sans-serif;
-            color: #fff;
+            color: red;
             font-size: 0.8em;
             text-decoration: none;
         }
@@ -260,6 +339,14 @@
                     margin-left: -400px;
                     top: -300px;
                 }
+                @media screen and (min-width: 1224px){
+                    margin-left: -449px;
+                }
+                @media screen and (min-width: 1440px){
+                    margin-left: -501px;
+                    top: -358px;
+                }
+
             }
         }
 
@@ -269,8 +356,16 @@
                 @media screen and (min-width: 800px){
                     display: block;
                     position: absolute;
-                    margin-left: -379px;
-                    margin-top: -177px;
+                    margin-left: -343px;
+                    margin-top: -154px;
+                }
+                @media screen and (min-width: 1224px){
+                    margin-left: -368px;
+                    margin-top: -185px;
+                }
+                @media screen and (min-width: 1440px){
+                    margin-left: -395px;
+                    margin-top: -225px;
                 }
             }
         }
@@ -284,6 +379,9 @@
                     margin-left: -164px;
                     margin-top: -87px;
                 }
+                @media screen and (min-width: 1440px){
+                    margin-top: -137px;
+                }
             }
         }
 
@@ -296,6 +394,13 @@
                     margin-left: 207px;
                     margin-top: -119px;
                 }
+                @media screen and (min-width: 1024px){
+                    margin-left: 238px;
+                }
+                @media screen and (min-width: 1440px){
+                    margin-top: -136px;
+                }
+                
             }
         }
 
@@ -307,6 +412,10 @@
                     position: absolute;
                     margin-left: 13px;
                     margin-top: -114px;
+                }
+                @media screen and (min-width: 1440px){
+                    margin-left: 42px;
+                    margin-top: -166px;
                 }
             }
         }
@@ -320,6 +429,13 @@
                     margin-left: 195px;
                     margin-top: -203px;
                 }
+                @media screen and (min-width: 1224px){
+                    margin-left: 223px;
+                    margin-top: -236px;
+                }
+                @media screen and (min-width: 1440px){
+                    margin-left: 313px;
+                }
             }
         }
 
@@ -329,8 +445,19 @@
                 @media screen and (min-width: 800px){
                     display: block;
                     position: absolute;
-                    margin-left: 20px;
+                    margin-left: 53px;
+                    margin-top: -364px;
+                }
+                @media screen and (min-width: 1024px){
+                    margin-top: -413px;
+                }
+                @media screen and (min-width: 1224px){
+                    margin-left: 69px;
                     margin-top: -443px;
+                }
+                @media screen and (min-width: 1440px){
+                    margin-left: 101px;
+                    margin-top: -522px;
                 }
             }
         }
@@ -344,6 +471,18 @@
                     margin-left: 118px;
                     margin-top: -389px;
                 }
+                @media screen and (min-width: 1024px){
+                    margin-top: -421px;
+                    margin-left: 241px;
+                }
+                @media screen and (min-width: 1224px){
+                    margin-left: 215px;
+                    margin-top: -469px;
+                }
+                @media screen and (min-width: 1440px){
+                    margin-left: 331px;
+                    margin-top: -407px;
+                }
             }
         }
 
@@ -356,6 +495,17 @@
                     margin-left: 211px;
                     margin-top: -264px;
                 }
+                @media screen and (min-width: 1024px){
+                    margin-left: 249px;
+                }
+                @media screen and (min-width: 1224px){
+                    margin-left: 251px;
+                    margin-top: -302px;
+                }
+                @media screen and (min-width: 1440px){
+                    margin-left: 307px;
+                    margin-top: -321px;
+                }
             }
         }
 
@@ -366,8 +516,21 @@
                     display: block;
                     position: absolute;
                     margin-left: 200px;
-                    margin-top: -347px;
+                    margin-top: -358px;
                 }
+                @media screen and (min-width: 1024px){
+                    margin-left: 266px;
+                    margin-top: -350px;
+                }
+                @media screen and (min-width: 1224px){
+                    margin-left: 276px;
+                    margin-top: -358px;
+                }
+                @media screen and (min-width: 1440px){
+                    margin-left: 324px;
+                    margin-top: -504px;
+                }
+                
             }
         }
 
